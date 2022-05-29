@@ -30,10 +30,6 @@ final class DetailView: BaseVivoraViewController {
     @IBOutlet weak var storiesAI: UIActivityIndicatorView!
     @IBOutlet weak var eventsAI: UIActivityIndicatorView!
     
-    var comicsCollection: CollectionViewProtocol?
-    var eventsCollection: CollectionViewProtocol?
-    var storiesCollection: CollectionViewProtocol?
-    
     // MARK: Components
     
     private let presenter: DetailPresenterProtocol
@@ -47,6 +43,7 @@ final class DetailView: BaseVivoraViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         VivoraLog("Detail view 👁 loaded", tag: .presentation)
+        localize()
         presenter.viewDidLoad()
         DispatchQueue.global(qos: .userInitiated).async { [presenter, character] in
             presenter.getCollectionsData(from: character)
@@ -70,9 +67,16 @@ final class DetailView: BaseVivoraViewController {
     }
 }
 
-// MARK: - Layout
+// MARK: - UI
 
 private extension DetailView {
+    func localize() {
+        descriptionTitle.text = "detail-description".localized
+        eventsLabel.text = "detail-events".localized
+        comicsLabel.text = "detail-comics".localized
+        storiesLabel.text = "detail-stories".localized
+    }
+
     func layoutSetup() -> UICollectionViewFlowLayout {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal

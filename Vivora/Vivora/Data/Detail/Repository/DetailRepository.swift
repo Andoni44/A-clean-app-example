@@ -11,7 +11,8 @@ struct DetailRepository: DetailRepositoryProtocol {
     let remoteDataSource: DetailRemoteDataSourceProtocol
     let localDataSource: DetailLocalDataSourceProtocol
 
-    init(remoteDataSource: DetailRemoteDataSourceProtocol, localDataSource: DetailLocalDataSourceProtocol) {
+    init(remoteDataSource: DetailRemoteDataSourceProtocol,
+         localDataSource: DetailLocalDataSourceProtocol) {
         self.remoteDataSource = remoteDataSource
         self.localDataSource = localDataSource
     }
@@ -29,6 +30,8 @@ struct DetailRepository: DetailRepositoryProtocol {
             }
         }
     }
+
+    // TODO: Find a better apprach, DTO refactor?
 
     private func transformResults(_ results: (comics: [ComicDTO],
                                               events: [EventDTO],

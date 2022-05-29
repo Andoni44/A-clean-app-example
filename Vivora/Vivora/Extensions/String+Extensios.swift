@@ -30,4 +30,8 @@ extension String {
     var transformToHTTPS: String {
         self.replacingOccurrences(of: "http", with: "https") + "/landscape_xlarge.jpg"
     }
+
+    var localized: String {
+        NSLocalizedString(self, comment: "")
+    }
 }

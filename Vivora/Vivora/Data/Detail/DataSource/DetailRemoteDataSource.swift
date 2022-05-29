@@ -14,8 +14,13 @@ struct DetailRemoteDataSource: DetailRemoteDataSourceProtocol {
         self.api = api
     }
 
+    // TODO: ApiFactory with async/await
+
     func getCollectionsData(from character: Character,
-                            completion: @escaping (Result<(comics: [ComicDTO], events: [EventDTO], stories: [StoryDTO]), NetworkError>) -> Void) {
+                            completion: @escaping (Result<(comics: [ComicDTO],
+                                                           events: [EventDTO],
+                                                           stories: [StoryDTO]),
+                                                   NetworkError>) -> Void) {
         let group = DispatchGroup()
         var serviceError: NetworkError?
 
@@ -79,7 +84,9 @@ struct DetailRemoteDataSource: DetailRemoteDataSourceProtocol {
             if let error  = serviceError {
                 completion(.failure(error))
             } else {
-                completion(.success((comics: comics, events: events, stories: stories)))
+                completion(.success((comics: comics,
+                                     events: events,
+                                     stories: stories)))
             }
         }
     }

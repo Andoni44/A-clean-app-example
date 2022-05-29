@@ -14,7 +14,8 @@ struct DetailInteractor: DetailInteractorProtocol {
         self.repository = repository
     }
 
-    func getCollectionsData(from character: Character, completion: @escaping (Result<CollectionDisplayDataModel, NetworkError>) -> Void) {
+    func getCollectionsData(from character: Character,
+                            completion: @escaping (Result<CollectionDisplayDataModel, NetworkError>) -> Void) {
         repository.getCollectionsData(from: character) { result in
             switch result {
                 case .success(let data):

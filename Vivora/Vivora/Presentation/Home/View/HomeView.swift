@@ -86,6 +86,7 @@ final class HomeView: BaseVivoraViewController {
         searchBarSetup()
         setupButton()
         presenter.viewDidLoad()
+        localize()
     }
 }
 
@@ -119,7 +120,8 @@ private extension HomeView {
     }
 
     func navigationNavigatioConfiguration() {
-        let barBackItem = UIBarButtonItem(title: NSLocalizedString("All Heroes", comment: ""),
+        let barBackItem = UIBarButtonItem(title: NSLocalizedString("home-back".localized,
+                                                                   comment: ""),
                                           style: .plain,
                                           target: nil, action: nil)
         navigationItem.backBarButtonItem = barBackItem
@@ -134,6 +136,14 @@ private extension HomeView {
 // MARK: - UI setup
 
 private extension HomeView {
+    func localize() {
+        searchButton.setTitle("home-empty-search-button".localized, for: .normal)
+        searchButton.setTitle("home-empty-search-button".localized, for: .selected)
+        noResultsLabel.text = "home-empty-label".localized
+        selector.setTitle("home-segment-all".localized, forSegmentAt: 0)
+        selector.setTitle("home-segment-favourites".localized, forSegmentAt: 1)
+    }
+
     func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self

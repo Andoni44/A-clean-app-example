@@ -7,7 +7,7 @@
 
 import UIKit
 
-let appDelegate: AnyClass = NSClassFromString("TestingAppDelegate") ?? AppDelegate.self
+let appDelegate: AnyClass = NSClassFromString("AppDelegateMock") ?? AppDelegate.self
 
 UIApplicationMain(
     CommandLine.argc,

@@ -1,0 +1,23 @@
+/* 
+  Localizable.strings
+  Vivora
+
+  Created by Andoni Da silva on 29/5/22.
+  
+*/
+
+// Home
+
+"home-search" = "Search...";
+"home-segment-all" = "All";
+"home-segment-favourites" = "Favourites";
+"home-empty-label" = "Press return to search on the internet or the below button";
+"home-empty-search-button" = "Search";
+"home-back" = "All heroes";
+
+// Detail
+
+"detail-description" = "Description";
+"detail-events" = "Events";
+"detail-comics" = "Comics";
+"detail-stories" = "Stories";

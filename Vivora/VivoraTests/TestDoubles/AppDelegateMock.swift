@@ -9,8 +9,8 @@ import UIKit
 
 @testable import Vivora_PRE
 
-@objc(TestingAppDelegate)
-class TestingAppDelegate: UIResponder, UIApplicationDelegate {
+@objc(AppDelegateMock)
+class AppDelegateMock: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
