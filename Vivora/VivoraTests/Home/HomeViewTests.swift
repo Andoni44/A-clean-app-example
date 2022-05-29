@@ -59,14 +59,6 @@ class HomeViewTests: XCTestCase {
         XCTAssertTrue(sut.scrollUpButton.alpha == 0)
     }
 
-    func test_setupButton() {
-        XCTAssertEqual(sut.scrollUpButton.layer.shadowColor, UIColor.lightGray.cgColor)
-        XCTAssertEqual(sut.scrollUpButton.layer.shadowOpacity, 1)
-        XCTAssertEqual(sut.scrollUpButton.layer.shadowOffset, CGSize(width: 20, height: 20))
-        XCTAssertEqual(sut.scrollUpButton.layer.shadowRadius, 82)
-        XCTAssertEqual(sut.scrollUpButton.layer.rasterizationScale, UIScreen.main.scale)
-    }
-
     func test_searchButton() {
         tap(sut.searchButton)
         waitUI()

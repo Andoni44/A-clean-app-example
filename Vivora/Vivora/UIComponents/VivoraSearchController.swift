@@ -24,7 +24,7 @@ final class VivoraSearchController: UISearchController {
         fatalError("init(coder:) has not been implemented")
     }
 
-    private func configureSearchBarUI(title: String = "Search...",
+    private func configureSearchBarUI(title: String = "home-search".localized,
                                       textColor: UIColor = UIColor.white) {
         searchBar.tintColor = textColor
         if let textfield = searchBar.value(forKey: "searchField") as? UITextField {
