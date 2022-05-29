@@ -73,19 +73,24 @@ struct ApiFactory: ApiFactoryProtocol {
                 VivoraLog(error, message: "Network problem 🚨", tag: .networking)
                 completion(.failure(.problem))
                 return
-
             }
-            if response.statusCode == 200 {
-                Helper.decode(data) { dto in
-                    completion(.success(dto))
-                }
-            } else {
-                VivoraLog("Server error 🚨", level: .debug, tag: .networking)
-                completion(.failure(.serverError))
+            switch response.statusCode {
+                case 200:
+                    Helper.decode(data) { dto in
+                        completion(.success(dto))
+                    }
+                case 409:
+                    VivoraLog("Error 🚨", level: .debug, tag: .networking)
+                    completion(.failure(.serverError))
+                default:
+                    VivoraLog("Server error 🚨", level: .debug, tag: .networking)
+                    completion(.failure(.serverError))
             }
         }.resume()
     }
 }
+
+// MARK: - Request setup
 
 private extension ApiFactory {
     func generateRequest(fromEndpoint endpoint: EndPoint) -> URLRequest? {

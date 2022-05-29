@@ -43,7 +43,7 @@ class HomeRemoteDataSourceTests: XCTestCase {
         }
 
         mockURLSession.dataTaskArgsCompletionHandler.first?(
-            getData(from: "listDTO.json"), response(statusCode: 200), nil
+            getData(from: "listDTO.json"), TestHelper.response(statusCode: 200), nil
         )
         waitForExpectations(timeout: 0.01)
         XCTAssertTrue(mockURLSession.dataTaskCallCount == 1)
@@ -63,7 +63,7 @@ class HomeRemoteDataSourceTests: XCTestCase {
         }
 
         mockURLSession.dataTaskArgsCompletionHandler.first?(
-            getData(from: "listDTO.json"), response(statusCode: 404), NetworkError.auth
+            getData(from: "listDTO.json"), TestHelper.response(statusCode: 404), NetworkError.auth
         )
         waitForExpectations(timeout: 0.01)
         XCTAssertTrue(mockURLSession.dataTaskCallCount == 1)
