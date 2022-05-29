@@ -1,0 +1,6 @@
+sources:
+  - ../Vivora
+templates:
+  - ./Templates/AutoMockable.stencil
+output:
+  path: ../Vivora Test/Generated code

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="BankinterSans-Bol.otf">
+            <string>BankinterSans-Bold</string>
+        </array>
+        <array key="BankinterSans-Lig.otf">
+            <string>BankinterSans-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="VivoraToast" id="iN0-l3-epB" customClass="VivoraToast" customModule="Vivora" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KXN-6m-AAZ">
+                    <rect key="frame" x="16" y="28" width="40" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="RPX-XC-zzN">
+                            <rect key="frame" x="8" y="8" width="24" height="24"/>
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="9aD-Pw-wm1"/>
+                                <constraint firstAttribute="height" constant="24" id="UDf-G2-mJu"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.70161443948745728" green="0.90969759225845337" blue="0.90980947017669678" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstItem="RPX-XC-zzN" firstAttribute="centerY" secondItem="KXN-6m-AAZ" secondAttribute="centerY" id="0fr-Mk-cIg"/>
+                        <constraint firstAttribute="height" constant="40" id="RDq-gR-3sk"/>
+                        <constraint firstAttribute="width" constant="40" id="lvM-JX-Zi9"/>
+                        <constraint firstItem="RPX-XC-zzN" firstAttribute="centerX" secondItem="KXN-6m-AAZ" secondAttribute="centerX" id="lyi-zs-o32"/>
+                    </constraints>
+                </view>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XvR-af-YL8">
+                    <rect key="frame" x="72" y="28" width="250" height="59"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EkK-pb-OKl">
+                            <rect key="frame" x="0.0" y="0.0" width="250" height="16.5"/>
+                            <fontDescription key="fontDescription" name="BankinterSans-Bold" family="Bankinter Sans" pointSize="14"/>
+                            <color key="textColor" red="0.098039215686274508" green="0.10579986125230789" blue="0.10980477184057236" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Text" textAlignment="justified" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pS1-AH-lS8">
+                            <rect key="frame" x="0.0" y="26.5" width="250" height="32.5"/>
+                            <fontDescription key="fontDescription" name="BankinterSans-Light" family="Bankinter Sans" pointSize="14"/>
+                            <color key="textColor" red="0.094292707741260529" green="0.10187827795743942" blue="0.10588323324918747" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="97C-FT-IQ9">
+                    <rect key="frame" x="322" y="21" width="37" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="37" id="P9P-G6-i7D"/>
+                        <constraint firstAttribute="height" constant="38" id="s1y-VE-gF6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XvR-af-YL8" firstAttribute="top" secondItem="KXN-6m-AAZ" secondAttribute="top" id="3A7-J9-puw"/>
+                <constraint firstItem="XvR-af-YL8" firstAttribute="leading" secondItem="KXN-6m-AAZ" secondAttribute="trailing" constant="16" id="Cf0-1k-NMU"/>
+                <constraint firstItem="KXN-6m-AAZ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="28" id="EL5-ai-GZC"/>
+                <constraint firstItem="XvR-af-YL8" firstAttribute="trailing" secondItem="97C-FT-IQ9" secondAttribute="leading" id="HON-rl-8AD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="97C-FT-IQ9" secondAttribute="trailing" constant="16" id="IBV-0m-f5M"/>
+                <constraint firstItem="KXN-6m-AAZ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="UuR-SQ-Map"/>
+                <constraint firstItem="97C-FT-IQ9" firstAttribute="top" secondItem="KXN-6m-AAZ" secondAttribute="top" constant="-7" id="bvH-93-64h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XvR-af-YL8" secondAttribute="bottom" constant="16" id="eUx-ZC-g0d"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bottomConstraint" destination="eUx-ZC-g0d" id="2S0-S6-LCX"/>
+                <outlet property="closeButton" destination="97C-FT-IQ9" id="tO4-3I-YWa"/>
+                <outlet property="descriptionLabel" destination="pS1-AH-lS8" id="zRY-Ko-RBn"/>
+                <outlet property="infoContentView" destination="KXN-6m-AAZ" id="oLZ-gv-Ldd"/>
+                <outlet property="infoImageView" destination="RPX-XC-zzN" id="R33-Z4-yli"/>
+                <outlet property="stackView" destination="XvR-af-YL8" id="wvG-OP-1g9"/>
+                <outlet property="titleLabel" destination="EkK-pb-OKl" id="rNL-8a-Rec"/>
+            </connections>
+            <point key="canvasLocation" x="36" y="-90.404797601199405"/>
+        </view>
+    </objects>
+</document>

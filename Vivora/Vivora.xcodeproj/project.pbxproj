@@ -1,0 +1,2000 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F26461A28418E2F00FD9E65 /* AutoMockable.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646182841594F00FD9E65 /* AutoMockable.generated.swift */; };
+		1F26461D2841FD8500FD9E65 /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26461C2841FD8500FD9E65 /* TestHelper.swift */; };
+		1F26461F2841FED900FD9E65 /* XCTestCase+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26461E2841FED900FD9E65 /* XCTestCase+Extensions.swift */; };
+		1F2646212842111A00FD9E65 /* VivoraToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646202842111A00FD9E65 /* VivoraToast.swift */; };
+		1F2646222842111F00FD9E65 /* VivoraToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646202842111A00FD9E65 /* VivoraToast.swift */; };
+		1F264625284214A700FD9E65 /* VivoraToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264623284214A700FD9E65 /* VivoraToastManager.swift */; };
+		1F264626284214A700FD9E65 /* VivoraToastManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264623284214A700FD9E65 /* VivoraToastManager.swift */; };
+		1F264627284214A700FD9E65 /* VivoraToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F264624284214A700FD9E65 /* VivoraToast.xib */; };
+		1F264628284214A700FD9E65 /* VivoraToast.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F264624284214A700FD9E65 /* VivoraToast.xib */; };
+		1F26462A2842176C00FD9E65 /* BaseVivoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646292842176C00FD9E65 /* BaseVivoraViewController.swift */; };
+		1F26462B2842176C00FD9E65 /* BaseVivoraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646292842176C00FD9E65 /* BaseVivoraViewController.swift */; };
+		1F2646312842313800FD9E65 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646302842313800FD9E65 /* MockURLSession.swift */; };
+		1F264634284237F100FD9E65 /* ApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264633284237F100FD9E65 /* ApiTests.swift */; };
+		1F26463C28424E2900FD9E65 /* listDTO.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F26463B28424E2900FD9E65 /* listDTO.json */; };
+		1F26463E2842695300FD9E65 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26463D2842695300FD9E65 /* Bundle+decode.swift */; };
+		1F26463F2842695300FD9E65 /* Bundle+decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26463D2842695300FD9E65 /* Bundle+decode.swift */; };
+		1F2646492842875D00FD9E65 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646472842875D00FD9E65 /* DetailView.swift */; };
+		1F26464A2842875D00FD9E65 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646472842875D00FD9E65 /* DetailView.swift */; };
+		1F26464B2842875D00FD9E65 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2646482842875D00FD9E65 /* DetailView.xib */; };
+		1F26464C2842875D00FD9E65 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2646482842875D00FD9E65 /* DetailView.xib */; };
+		1F26464E2842887F00FD9E65 /* DetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26464D2842887F00FD9E65 /* DetailHeader.swift */; };
+		1F26464F2842887F00FD9E65 /* DetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26464D2842887F00FD9E65 /* DetailHeader.swift */; };
+		1F2646522842947A00FD9E65 /* DetailColectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646502842947A00FD9E65 /* DetailColectionViewController.swift */; };
+		1F2646532842947A00FD9E65 /* DetailColectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646502842947A00FD9E65 /* DetailColectionViewController.swift */; };
+		1F2646592842977500FD9E65 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646572842977500FD9E65 /* DetailCell.swift */; };
+		1F26465A2842977500FD9E65 /* DetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646572842977500FD9E65 /* DetailCell.swift */; };
+		1F26465B2842977500FD9E65 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2646582842977500FD9E65 /* DetailCell.xib */; };
+		1F26465C2842977500FD9E65 /* DetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F2646582842977500FD9E65 /* DetailCell.xib */; };
+		1F26466128432EB400FD9E65 /* DetailPresentationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26466028432EB400FD9E65 /* DetailPresentationProtocols.swift */; };
+		1F26466228432EB400FD9E65 /* DetailPresentationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26466028432EB400FD9E65 /* DetailPresentationProtocols.swift */; };
+		1F26466428432F7400FD9E65 /* BaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26466328432F7400FD9E65 /* BaseProtocols.swift */; };
+		1F26466528432F7400FD9E65 /* BaseProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26466328432F7400FD9E65 /* BaseProtocols.swift */; };
+		1F2646672843304A00FD9E65 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646662843304A00FD9E65 /* DetailRouter.swift */; };
+		1F2646682843304A00FD9E65 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646662843304A00FD9E65 /* DetailRouter.swift */; };
+		1F26466A284330AF00FD9E65 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264669284330AF00FD9E65 /* DetailPresenter.swift */; };
+		1F26466B284330AF00FD9E65 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264669284330AF00FD9E65 /* DetailPresenter.swift */; };
+		1F26466F2843314400FD9E65 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26466E2843314400FD9E65 /* DetailInteractor.swift */; };
+		1F2646702843314400FD9E65 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26466E2843314400FD9E65 /* DetailInteractor.swift */; };
+		1F2646722843315700FD9E65 /* DetailDomainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646712843315700FD9E65 /* DetailDomainProtocols.swift */; };
+		1F2646732843315700FD9E65 /* DetailDomainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646712843315700FD9E65 /* DetailDomainProtocols.swift */; };
+		1F264677284332F100FD9E65 /* DetailDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264676284332F100FD9E65 /* DetailDataProtocols.swift */; };
+		1F264678284332F100FD9E65 /* DetailDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264676284332F100FD9E65 /* DetailDataProtocols.swift */; };
+		1F26467D2843359400FD9E65 /* DetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26467C2843359400FD9E65 /* DetailRepository.swift */; };
+		1F26467E2843359400FD9E65 /* DetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26467C2843359400FD9E65 /* DetailRepository.swift */; };
+		1F264680284335C300FD9E65 /* DetailLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26467F284335C300FD9E65 /* DetailLocalDataSource.swift */; };
+		1F264681284335C300FD9E65 /* DetailLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26467F284335C300FD9E65 /* DetailLocalDataSource.swift */; };
+		1F264683284335CE00FD9E65 /* DetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264682284335CE00FD9E65 /* DetailRemoteDataSource.swift */; };
+		1F264684284335CE00FD9E65 /* DetailRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264682284335CE00FD9E65 /* DetailRemoteDataSource.swift */; };
+		1F26468528433A1B00FD9E65 /* HomeViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6256283CFC1D00D68BE5 /* HomeViewTests.swift */; };
+		1F26468628433A1B00FD9E65 /* HomePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26462C284226BE00FD9E65 /* HomePresenterTests.swift */; };
+		1F26468728433A1B00FD9E65 /* HomeInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646352842431A00FD9E65 /* HomeInteractorTests.swift */; };
+		1F26468828433A1B00FD9E65 /* HomeRemoteDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26463928424B3C00FD9E65 /* HomeRemoteDataSourceTests.swift */; };
+		1F26468928433A1B00FD9E65 /* HomeRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F264637284249BC00FD9E65 /* HomeRepositoryTests.swift */; };
+		1F26468C2843538200FD9E65 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F26468B2843538200FD9E65 /* loader.json */; };
+		1F26468D2843538200FD9E65 /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F26468B2843538200FD9E65 /* loader.json */; };
+		1F26469228435B4000FD9E65 /* String+Extensios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26469128435B4000FD9E65 /* String+Extensios.swift */; };
+		1F26469328435B4000FD9E65 /* String+Extensios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26469128435B4000FD9E65 /* String+Extensios.swift */; };
+		1F2646952843603800FD9E65 /* ComicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646942843603800FD9E65 /* ComicDTO.swift */; };
+		1F2646962843603800FD9E65 /* ComicDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646942843603800FD9E65 /* ComicDTO.swift */; };
+		1F2646992843622F00FD9E65 /* CollectionDisplayDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646982843622F00FD9E65 /* CollectionDisplayDataModel.swift */; };
+		1F26469A2843622F00FD9E65 /* CollectionDisplayDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2646982843622F00FD9E65 /* CollectionDisplayDataModel.swift */; };
+		1F26469C2843756400FD9E65 /* StoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26469B2843756400FD9E65 /* StoryDTO.swift */; };
+		1F26469D2843756400FD9E65 /* StoryDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26469B2843756400FD9E65 /* StoryDTO.swift */; };
+		1F26469F2843756A00FD9E65 /* EventDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26469E2843756A00FD9E65 /* EventDTO.swift */; };
+		1F2646A02843756A00FD9E65 /* EventDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F26469E2843756A00FD9E65 /* EventDTO.swift */; };
+		1F7E85202840D54A00413719 /* VivoraSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E851F2840D54A00413719 /* VivoraSearchController.swift */; };
+		1F7E85242840E80800413719 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E85232840E80800413719 /* main.swift */; };
+		1F7E85352840ED0500413719 /* TestingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E85212840E77000413719 /* TestingAppDelegate.swift */; };
+		1F7E854128414C4800413719 /* HomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62DA283EB18D00D68BE5 /* HomeLocalDataSource.swift */; };
+		1F7E854228414C4800413719 /* VivoraSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E851F2840D54A00413719 /* VivoraSearchController.swift */; };
+		1F7E854328414C4800413719 /* HomePresentationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6273283CFCB800D68BE5 /* HomePresentationProtocols.swift */; };
+		1F7E854428414C4800413719 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6278283CFCB800D68BE5 /* HomeRouter.swift */; };
+		1F7E854528414C4800413719 /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E8283FCEB500D68BE5 /* UIView+Corner.swift */; };
+		1F7E854628414C4800413719 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED623C283CFC1B00D68BE5 /* AppDelegate.swift */; };
+		1F7E854728414C4800413719 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6275283CFCB800D68BE5 /* HomeView.swift */; };
+		1F7E854828414C4800413719 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62C4283D3B5D00D68BE5 /* HomeCell.swift */; };
+		1F7E854928414C4800413719 /* Vivora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6245283CFC1B00D68BE5 /* Vivora.xcdatamodeld */; };
+		1F7E854A28414C4800413719 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED627E283CFCB800D68BE5 /* HomeInteractor.swift */; };
+		1F7E854B28414C4800413719 /* HomeDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6291283D22EE00D68BE5 /* HomeDataProtocols.swift */; };
+		1F7E854C28414C4800413719 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6272283CFCB800D68BE5 /* HomePresenter.swift */; };
+		1F7E854D28414C4800413719 /* HomeDomainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED627C283CFCB800D68BE5 /* HomeDomainProtocols.swift */; };
+		1F7E854E28414C4800413719 /* UIView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62EA283FCEEB00D68BE5 /* UIView+Fade.swift */; };
+		1F7E854F28414C4800413719 /* CharactersListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6299283D2ED500D68BE5 /* CharactersListDTO.swift */; };
+		1F7E855028414C4800413719 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E2283FA97100D68BE5 /* UIFont+Extensions.swift */; };
+		1F7E855128414C4800413719 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62A8283D361600D68BE5 /* Helper.swift */; };
+		1F7E855228414C4800413719 /* CellTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62C6283D3C8F00D68BE5 /* CellTitle.swift */; };
+		1F7E855328414C4800413719 /* HomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62D8283EB17500D68BE5 /* HomeRemoteDataSource.swift */; };
+		1F7E855428414C4800413719 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E4283FAB0C00D68BE5 /* UIImage+Extensions.swift */; };
+		1F7E855528414C4800413719 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62C8283D3F5B00D68BE5 /* Character.swift */; };
+		1F7E855628414C4800413719 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62CC283D426E00D68BE5 /* Log.swift */; };
+		1F7E855728414C4800413719 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E6283FB13D00D68BE5 /* UIColor+Extensions.swift */; };
+		1F7E855828414C4800413719 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62CA283D41D500D68BE5 /* Network.swift */; };
+		1F7E855928414C4800413719 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED628E283D091500D68BE5 /* Environment.swift */; };
+		1F7E855A28414C4800413719 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6297283D236700D68BE5 /* HomeRepository.swift */; };
+		1F7E855B28414C4800413719 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F7E85232840E80800413719 /* main.swift */; };
+		1F7E855C28414C4800413719 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62AF283D397400D68BE5 /* UIView+Anchors.swift */; };
+		1F7E855E28414C4800413719 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7E853B28414C4800413719 /* CocoaLumberjack */; };
+		1F7E855F28414C4800413719 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7E853728414C4800413719 /* Lottie */; };
+		1F7E856028414C4800413719 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7E853D28414C4800413719 /* CocoaLumberjackSwift */; };
+		1F7E856128414C4800413719 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7E853928414C4800413719 /* CryptoSwift */; };
+		1F7E856228414C4800413719 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1F7E853E28414C4800413719 /* SDWebImage */; };
+		1F7E856428414C4800413719 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62B8283D3A1200D68BE5 /* OFL.txt */; };
+		1F7E856528414C4800413719 /* Bangers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62B4283D3A0600D68BE5 /* Bangers-Regular.ttf */; };
+		1F7E856628414C4800413719 /* BarlowCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BD283D3A1200D68BE5 /* BarlowCondensed-Regular.ttf */; };
+		1F7E856728414C4800413719 /* BarlowCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BA283D3A1200D68BE5 /* BarlowCondensed-Light.ttf */; };
+		1F7E856828414C4800413719 /* BarlowCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BC283D3A1200D68BE5 /* BarlowCondensed-Black.ttf */; };
+		1F7E856928414C4800413719 /* Anton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62B7283D3A1200D68BE5 /* Anton-Regular.ttf */; };
+		1F7E856A28414C4800413719 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FED6248283CFC1D00D68BE5 /* Assets.xcassets */; };
+		1F7E856B28414C4800413719 /* BarlowCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BB283D3A1200D68BE5 /* BarlowCondensed-Medium.ttf */; };
+		1F7E856D28414C4800413719 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62D6283D653800D68BE5 /* LaunchScreen.storyboard */; };
+		1F7E856E28414C4800413719 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FED6276283CFCB800D68BE5 /* HomeView.xib */; };
+		1FED623D283CFC1B00D68BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED623C283CFC1B00D68BE5 /* AppDelegate.swift */; };
+		1FED6247283CFC1B00D68BE5 /* Vivora.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6245283CFC1B00D68BE5 /* Vivora.xcdatamodeld */; };
+		1FED6249283CFC1D00D68BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FED6248283CFC1D00D68BE5 /* Assets.xcassets */; };
+		1FED627F283CFCB800D68BE5 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6272283CFCB800D68BE5 /* HomePresenter.swift */; };
+		1FED6280283CFCB800D68BE5 /* HomePresentationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6273283CFCB800D68BE5 /* HomePresentationProtocols.swift */; };
+		1FED6281283CFCB800D68BE5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6275283CFCB800D68BE5 /* HomeView.swift */; };
+		1FED6282283CFCB800D68BE5 /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FED6276283CFCB800D68BE5 /* HomeView.xib */; };
+		1FED6283283CFCB800D68BE5 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6278283CFCB800D68BE5 /* HomeRouter.swift */; };
+		1FED6284283CFCB800D68BE5 /* HomeDomainProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED627C283CFCB800D68BE5 /* HomeDomainProtocols.swift */; };
+		1FED6285283CFCB800D68BE5 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED627E283CFCB800D68BE5 /* HomeInteractor.swift */; };
+		1FED628F283D091500D68BE5 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED628E283D091500D68BE5 /* Environment.swift */; };
+		1FED6292283D22EE00D68BE5 /* HomeDataProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6291283D22EE00D68BE5 /* HomeDataProtocols.swift */; };
+		1FED6298283D236700D68BE5 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6297283D236700D68BE5 /* HomeRepository.swift */; };
+		1FED629A283D2ED500D68BE5 /* CharactersListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED6299283D2ED500D68BE5 /* CharactersListDTO.swift */; };
+		1FED62A4283D329F00D68BE5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1FED62A3283D329F00D68BE5 /* Lottie */; };
+		1FED62A7283D333200D68BE5 /* CryptoSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1FED62A6283D333200D68BE5 /* CryptoSwift */; };
+		1FED62A9283D361600D68BE5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62A8283D361600D68BE5 /* Helper.swift */; };
+		1FED62B0283D397400D68BE5 /* UIView+Anchors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62AF283D397400D68BE5 /* UIView+Anchors.swift */; };
+		1FED62B5283D3A0600D68BE5 /* Bangers-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62B4283D3A0600D68BE5 /* Bangers-Regular.ttf */; };
+		1FED62BE283D3A1200D68BE5 /* Anton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62B7283D3A1200D68BE5 /* Anton-Regular.ttf */; };
+		1FED62BF283D3A1200D68BE5 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62B8283D3A1200D68BE5 /* OFL.txt */; };
+		1FED62C0283D3A1200D68BE5 /* BarlowCondensed-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BA283D3A1200D68BE5 /* BarlowCondensed-Light.ttf */; };
+		1FED62C1283D3A1200D68BE5 /* BarlowCondensed-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BB283D3A1200D68BE5 /* BarlowCondensed-Medium.ttf */; };
+		1FED62C2283D3A1200D68BE5 /* BarlowCondensed-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BC283D3A1200D68BE5 /* BarlowCondensed-Black.ttf */; };
+		1FED62C3283D3A1200D68BE5 /* BarlowCondensed-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62BD283D3A1200D68BE5 /* BarlowCondensed-Regular.ttf */; };
+		1FED62C5283D3B5D00D68BE5 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62C4283D3B5D00D68BE5 /* HomeCell.swift */; };
+		1FED62C7283D3C8F00D68BE5 /* CellTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62C6283D3C8F00D68BE5 /* CellTitle.swift */; };
+		1FED62C9283D3F5B00D68BE5 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62C8283D3F5B00D68BE5 /* Character.swift */; };
+		1FED62CB283D41D500D68BE5 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62CA283D41D500D68BE5 /* Network.swift */; };
+		1FED62CD283D426E00D68BE5 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62CC283D426E00D68BE5 /* Log.swift */; };
+		1FED62D0283D42C800D68BE5 /* CocoaLumberjack in Frameworks */ = {isa = PBXBuildFile; productRef = 1FED62CF283D42C800D68BE5 /* CocoaLumberjack */; };
+		1FED62D2283D42C800D68BE5 /* CocoaLumberjackSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1FED62D1283D42C800D68BE5 /* CocoaLumberjackSwift */; };
+		1FED62D7283D653800D68BE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FED62D6283D653800D68BE5 /* LaunchScreen.storyboard */; };
+		1FED62D9283EB17500D68BE5 /* HomeRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62D8283EB17500D68BE5 /* HomeRemoteDataSource.swift */; };
+		1FED62DB283EB18D00D68BE5 /* HomeLocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62DA283EB18D00D68BE5 /* HomeLocalDataSource.swift */; };
+		1FED62E1283ECF3F00D68BE5 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 1FED62E0283ECF3F00D68BE5 /* SDWebImage */; };
+		1FED62E3283FA97100D68BE5 /* UIFont+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E2283FA97100D68BE5 /* UIFont+Extensions.swift */; };
+		1FED62E5283FAB0C00D68BE5 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E4283FAB0C00D68BE5 /* UIImage+Extensions.swift */; };
+		1FED62E7283FB13D00D68BE5 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E6283FB13D00D68BE5 /* UIColor+Extensions.swift */; };
+		1FED62E9283FCEB500D68BE5 /* UIView+Corner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62E8283FCEB500D68BE5 /* UIView+Corner.swift */; };
+		1FED62EB283FCEEB00D68BE5 /* UIView+Fade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FED62EA283FCEEB00D68BE5 /* UIView+Fade.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F7E852D2840ECF800413719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FED6231283CFC1B00D68BE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FED6238283CFC1B00D68BE5;
+			remoteInfo = Vivora;
+		};
+		1F7E857628414C5900413719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FED6231283CFC1B00D68BE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F7E853628414C4800413719;
+			remoteInfo = "Vivora PRE";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F2646182841594F00FD9E65 /* AutoMockable.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoMockable.generated.swift; sourceTree = "<group>"; };
+		1F26461C2841FD8500FD9E65 /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
+		1F26461E2841FED900FD9E65 /* XCTestCase+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Extensions.swift"; sourceTree = "<group>"; };
+		1F2646202842111A00FD9E65 /* VivoraToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivoraToast.swift; sourceTree = "<group>"; };
+		1F264623284214A700FD9E65 /* VivoraToastManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VivoraToastManager.swift; sourceTree = "<group>"; };
+		1F264624284214A700FD9E65 /* VivoraToast.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VivoraToast.xib; sourceTree = "<group>"; };
+		1F2646292842176C00FD9E65 /* BaseVivoraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVivoraViewController.swift; sourceTree = "<group>"; };
+		1F26462C284226BE00FD9E65 /* HomePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTests.swift; sourceTree = "<group>"; };
+		1F2646302842313800FD9E65 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
+		1F264633284237F100FD9E65 /* ApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiTests.swift; sourceTree = "<group>"; };
+		1F2646352842431A00FD9E65 /* HomeInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTests.swift; sourceTree = "<group>"; };
+		1F264637284249BC00FD9E65 /* HomeRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepositoryTests.swift; sourceTree = "<group>"; };
+		1F26463928424B3C00FD9E65 /* HomeRemoteDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataSourceTests.swift; sourceTree = "<group>"; };
+		1F26463B28424E2900FD9E65 /* listDTO.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = listDTO.json; sourceTree = "<group>"; };
+		1F26463D2842695300FD9E65 /* Bundle+decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+decode.swift"; sourceTree = "<group>"; };
+		1F2646472842875D00FD9E65 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1F2646482842875D00FD9E65 /* DetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailView.xib; sourceTree = "<group>"; };
+		1F26464D2842887F00FD9E65 /* DetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailHeader.swift; sourceTree = "<group>"; };
+		1F2646502842947A00FD9E65 /* DetailColectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColectionViewController.swift; sourceTree = "<group>"; };
+		1F2646572842977500FD9E65 /* DetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCell.swift; sourceTree = "<group>"; };
+		1F2646582842977500FD9E65 /* DetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailCell.xib; sourceTree = "<group>"; };
+		1F26466028432EB400FD9E65 /* DetailPresentationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresentationProtocols.swift; sourceTree = "<group>"; };
+		1F26466328432F7400FD9E65 /* BaseProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseProtocols.swift; sourceTree = "<group>"; };
+		1F2646662843304A00FD9E65 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		1F264669284330AF00FD9E65 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
+		1F26466E2843314400FD9E65 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		1F2646712843315700FD9E65 /* DetailDomainProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDomainProtocols.swift; sourceTree = "<group>"; };
+		1F264676284332F100FD9E65 /* DetailDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDataProtocols.swift; sourceTree = "<group>"; };
+		1F26467C2843359400FD9E65 /* DetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRepository.swift; sourceTree = "<group>"; };
+		1F26467F284335C300FD9E65 /* DetailLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLocalDataSource.swift; sourceTree = "<group>"; };
+		1F264682284335CE00FD9E65 /* DetailRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRemoteDataSource.swift; sourceTree = "<group>"; };
+		1F26468B2843538200FD9E65 /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		1F26469128435B4000FD9E65 /* String+Extensios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensios.swift"; sourceTree = "<group>"; };
+		1F2646942843603800FD9E65 /* ComicDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicDTO.swift; sourceTree = "<group>"; };
+		1F2646982843622F00FD9E65 /* CollectionDisplayDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDisplayDataModel.swift; sourceTree = "<group>"; };
+		1F26469B2843756400FD9E65 /* StoryDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDTO.swift; sourceTree = "<group>"; };
+		1F26469E2843756A00FD9E65 /* EventDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDTO.swift; sourceTree = "<group>"; };
+		1F7E851F2840D54A00413719 /* VivoraSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VivoraSearchController.swift; sourceTree = "<group>"; };
+		1F7E85212840E77000413719 /* TestingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingAppDelegate.swift; sourceTree = "<group>"; };
+		1F7E85232840E80800413719 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		1F7E85292840ECF800413719 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F7E857428414C4800413719 /* Vivora PRE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Vivora PRE.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FED6239283CFC1B00D68BE5 /* Vivora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vivora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FED623C283CFC1B00D68BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1FED6246283CFC1B00D68BE5 /* Vivora.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vivora.xcdatamodel; sourceTree = "<group>"; };
+		1FED6248283CFC1D00D68BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1FED624D283CFC1D00D68BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1FED6256283CFC1D00D68BE5 /* HomeViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewTests.swift; sourceTree = "<group>"; };
+		1FED6272283CFCB800D68BE5 /* HomePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		1FED6273283CFCB800D68BE5 /* HomePresentationProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePresentationProtocols.swift; sourceTree = "<group>"; };
+		1FED6275283CFCB800D68BE5 /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1FED6276283CFCB800D68BE5 /* HomeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		1FED6278283CFCB800D68BE5 /* HomeRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		1FED627C283CFCB800D68BE5 /* HomeDomainProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDomainProtocols.swift; sourceTree = "<group>"; };
+		1FED627E283CFCB800D68BE5 /* HomeInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		1FED628E283D091500D68BE5 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		1FED6291283D22EE00D68BE5 /* HomeDataProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProtocols.swift; sourceTree = "<group>"; };
+		1FED6297283D236700D68BE5 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		1FED6299283D2ED500D68BE5 /* CharactersListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersListDTO.swift; sourceTree = "<group>"; };
+		1FED62A8283D361600D68BE5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		1FED62AF283D397400D68BE5 /* UIView+Anchors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Anchors.swift"; sourceTree = "<group>"; };
+		1FED62B4283D3A0600D68BE5 /* Bangers-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bangers-Regular.ttf"; sourceTree = "<group>"; };
+		1FED62B7283D3A1200D68BE5 /* Anton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Anton-Regular.ttf"; sourceTree = "<group>"; };
+		1FED62B8283D3A1200D68BE5 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		1FED62BA283D3A1200D68BE5 /* BarlowCondensed-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Light.ttf"; sourceTree = "<group>"; };
+		1FED62BB283D3A1200D68BE5 /* BarlowCondensed-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Medium.ttf"; sourceTree = "<group>"; };
+		1FED62BC283D3A1200D68BE5 /* BarlowCondensed-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Black.ttf"; sourceTree = "<group>"; };
+		1FED62BD283D3A1200D68BE5 /* BarlowCondensed-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BarlowCondensed-Regular.ttf"; sourceTree = "<group>"; };
+		1FED62C4283D3B5D00D68BE5 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		1FED62C6283D3C8F00D68BE5 /* CellTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellTitle.swift; sourceTree = "<group>"; };
+		1FED62C8283D3F5B00D68BE5 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		1FED62CA283D41D500D68BE5 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		1FED62CC283D426E00D68BE5 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		1FED62D6283D653800D68BE5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1FED62D8283EB17500D68BE5 /* HomeRemoteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRemoteDataSource.swift; sourceTree = "<group>"; };
+		1FED62DA283EB18D00D68BE5 /* HomeLocalDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeLocalDataSource.swift; sourceTree = "<group>"; };
+		1FED62E2283FA97100D68BE5 /* UIFont+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extensions.swift"; sourceTree = "<group>"; };
+		1FED62E4283FAB0C00D68BE5 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		1FED62E6283FB13D00D68BE5 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		1FED62E8283FCEB500D68BE5 /* UIView+Corner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Corner.swift"; sourceTree = "<group>"; };
+		1FED62EA283FCEEB00D68BE5 /* UIView+Fade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Fade.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F7E85262840ECF800413719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7E855D28414C4800413719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7E855E28414C4800413719 /* CocoaLumberjack in Frameworks */,
+				1F7E855F28414C4800413719 /* Lottie in Frameworks */,
+				1F7E856028414C4800413719 /* CocoaLumberjackSwift in Frameworks */,
+				1F7E856128414C4800413719 /* CryptoSwift in Frameworks */,
+				1F7E856228414C4800413719 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FED6236283CFC1B00D68BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FED62D0283D42C800D68BE5 /* CocoaLumberjack in Frameworks */,
+				1FED62A4283D329F00D68BE5 /* Lottie in Frameworks */,
+				1FED62D2283D42C800D68BE5 /* CocoaLumberjackSwift in Frameworks */,
+				1FED62A7283D333200D68BE5 /* CryptoSwift in Frameworks */,
+				1FED62E1283ECF3F00D68BE5 /* SDWebImage in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F2646152841518900FD9E65 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6256283CFC1D00D68BE5 /* HomeViewTests.swift */,
+				1F26462C284226BE00FD9E65 /* HomePresenterTests.swift */,
+				1F2646352842431A00FD9E65 /* HomeInteractorTests.swift */,
+				1F264637284249BC00FD9E65 /* HomeRepositoryTests.swift */,
+				1F26463928424B3C00FD9E65 /* HomeRemoteDataSourceTests.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F2646172841594F00FD9E65 /* Generated code */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646182841594F00FD9E65 /* AutoMockable.generated.swift */,
+			);
+			name = "Generated code";
+			path = "Vivora Test/Generated code";
+			sourceTree = SOURCE_ROOT;
+		};
+		1F264632284237E400FD9E65 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				1F264633284237F100FD9E65 /* ApiTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		1F2646402842745A00FD9E65 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F26461E2841FED900FD9E65 /* XCTestCase+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F2646412842747800FD9E65 /* TestEntities */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646302842313800FD9E65 /* MockURLSession.swift */,
+				1F7E85212840E77000413719 /* TestingAppDelegate.swift */,
+			);
+			path = TestEntities;
+			sourceTree = "<group>";
+		};
+		1F264642284275C400FD9E65 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62CC283D426E00D68BE5 /* Log.swift */,
+				1FED628E283D091500D68BE5 /* Environment.swift */,
+				1FED623C283CFC1B00D68BE5 /* AppDelegate.swift */,
+				1F7E85232840E80800413719 /* main.swift */,
+				1FED62A8283D361600D68BE5 /* Helper.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1F2646432842771D00FD9E65 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62C6283D3C8F00D68BE5 /* CellTitle.swift */,
+				1F2646292842176C00FD9E65 /* BaseVivoraViewController.swift */,
+				1F7E851F2840D54A00413719 /* VivoraSearchController.swift */,
+				1F26464D2842887F00FD9E65 /* DetailHeader.swift */,
+				1F26466328432F7400FD9E65 /* BaseProtocols.swift */,
+				1F2646442842773700FD9E65 /* Toast */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		1F2646442842773700FD9E65 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646202842111A00FD9E65 /* VivoraToast.swift */,
+				1F264624284214A700FD9E65 /* VivoraToast.xib */,
+				1F264623284214A700FD9E65 /* VivoraToastManager.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		1F264645284285A600FD9E65 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646972843621F00FD9E65 /* Model */,
+				1F26465F28432E9700FD9E65 /* Presenter */,
+				1F26465E28432E8B00FD9E65 /* Router */,
+				1F26466028432EB400FD9E65 /* DetailPresentationProtocols.swift */,
+				1F264646284285B900FD9E65 /* View */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1F264646284285B900FD9E65 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646472842875D00FD9E65 /* DetailView.swift */,
+				1F2646482842875D00FD9E65 /* DetailView.xib */,
+				1F2646502842947A00FD9E65 /* DetailColectionViewController.swift */,
+				1F2646572842977500FD9E65 /* DetailCell.swift */,
+				1F2646582842977500FD9E65 /* DetailCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F26465D28432E4600FD9E65 /* Resourcers */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62D6283D653800D68BE5 /* LaunchScreen.storyboard */,
+				1FED62B2283D39D000D68BE5 /* Fonts */,
+			);
+			path = Resourcers;
+			sourceTree = "<group>";
+		};
+		1F26465E28432E8B00FD9E65 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646662843304A00FD9E65 /* DetailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1F26465F28432E9700FD9E65 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1F264669284330AF00FD9E65 /* DetailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1F26466C2843311200FD9E65 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646742843319500FD9E65 /* Model */,
+				1F26466D2843311800FD9E65 /* Interactor */,
+				1F2646712843315700FD9E65 /* DetailDomainProtocols.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1F26466D2843311800FD9E65 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1F26466E2843314400FD9E65 /* DetailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1F2646742843319500FD9E65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1F264675284332E200FD9E65 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				1F26467B2843335200FD9E65 /* DTO */,
+				1F26467A2843334C00FD9E65 /* DataSource */,
+				1F2646792843334400FD9E65 /* Repository */,
+				1F264676284332F100FD9E65 /* DetailDataProtocols.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		1F2646792843334400FD9E65 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1F26467C2843359400FD9E65 /* DetailRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1F26467A2843334C00FD9E65 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1F26467F284335C300FD9E65 /* DetailLocalDataSource.swift */,
+				1F264682284335CE00FD9E65 /* DetailRemoteDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		1F26467B2843335200FD9E65 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646942843603800FD9E65 /* ComicDTO.swift */,
+				1F26469B2843756400FD9E65 /* StoryDTO.swift */,
+				1F26469E2843756A00FD9E65 /* EventDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		1F2646972843621F00FD9E65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F2646982843622F00FD9E65 /* CollectionDisplayDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FED6230283CFC1B00D68BE5 = {
+			isa = PBXGroup;
+			children = (
+				1FED623B283CFC1B00D68BE5 /* Vivora */,
+				1FED6255283CFC1D00D68BE5 /* VivoraTests */,
+				1FED623A283CFC1B00D68BE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FED623A283CFC1B00D68BE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6239283CFC1B00D68BE5 /* Vivora.app */,
+				1F7E85292840ECF800413719 /* Tests.xctest */,
+				1F7E857428414C4800413719 /* Vivora PRE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FED623B283CFC1B00D68BE5 /* Vivora */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6248283CFC1D00D68BE5 /* Assets.xcassets */,
+				1F26465D28432E4600FD9E65 /* Resourcers */,
+				1F2646432842771D00FD9E65 /* UIComponents */,
+				1F264642284275C400FD9E65 /* Application */,
+				1FED62D3283D636C00D68BE5 /* Animations */,
+				1FED6279283CFCB800D68BE5 /* Data */,
+				1FED627A283CFCB800D68BE5 /* Domain */,
+				1FED626F283CFCB800D68BE5 /* Presentation */,
+				1FED624D283CFC1D00D68BE5 /* Info.plist */,
+				1FED6245283CFC1B00D68BE5 /* Vivora.xcdatamodeld */,
+				1FED62B1283D397600D68BE5 /* Extensions */,
+			);
+			path = Vivora;
+			sourceTree = "<group>";
+		};
+		1FED6255283CFC1D00D68BE5 /* VivoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F26461C2841FD8500FD9E65 /* TestHelper.swift */,
+				1F26463B28424E2900FD9E65 /* listDTO.json */,
+				1F2646412842747800FD9E65 /* TestEntities */,
+				1F2646402842745A00FD9E65 /* Extensions */,
+				1F264632284237E400FD9E65 /* Network */,
+				1F2646172841594F00FD9E65 /* Generated code */,
+				1F2646152841518900FD9E65 /* Home */,
+			);
+			path = VivoraTests;
+			sourceTree = "<group>";
+		};
+		1FED626F283CFCB800D68BE5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1F264645284285A600FD9E65 /* Detail */,
+				1FED6270283CFCB800D68BE5 /* Home */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1FED6270283CFCB800D68BE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6273283CFCB800D68BE5 /* HomePresentationProtocols.swift */,
+				1FED6274283CFCB800D68BE5 /* View */,
+				1FED6271283CFCB800D68BE5 /* Presenter */,
+				1FED6277283CFCB800D68BE5 /* Router */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1FED6271283CFCB800D68BE5 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6272283CFCB800D68BE5 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1FED6274283CFCB800D68BE5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62AA283D387300D68BE5 /* Cell */,
+				1FED6275283CFCB800D68BE5 /* HomeView.swift */,
+				1FED6276283CFCB800D68BE5 /* HomeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FED6277283CFCB800D68BE5 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6278283CFCB800D68BE5 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1FED6279283CFCB800D68BE5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				1F264675284332E200FD9E65 /* Detail */,
+				1FED62CA283D41D500D68BE5 /* Network.swift */,
+				1FED6290283D22E000D68BE5 /* Home */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1FED627A283CFCB800D68BE5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1F26466C2843311200FD9E65 /* Detail */,
+				1FED627B283CFCB800D68BE5 /* Home */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1FED627B283CFCB800D68BE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1FED627C283CFCB800D68BE5 /* HomeDomainProtocols.swift */,
+				1FED6293283D231900D68BE5 /* Model */,
+				1FED627D283CFCB800D68BE5 /* Interactor */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1FED627D283CFCB800D68BE5 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1FED627E283CFCB800D68BE5 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1FED6290283D22E000D68BE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6291283D22EE00D68BE5 /* HomeDataProtocols.swift */,
+				1FED6296283D233600D68BE5 /* Repository */,
+				1FED6295283D233000D68BE5 /* DataSource */,
+				1FED6294283D232400D68BE5 /* DTO */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1FED6293283D231900D68BE5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62C8283D3F5B00D68BE5 /* Character.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1FED6294283D232400D68BE5 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6299283D2ED500D68BE5 /* CharactersListDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		1FED6295283D233000D68BE5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62D8283EB17500D68BE5 /* HomeRemoteDataSource.swift */,
+				1FED62DA283EB18D00D68BE5 /* HomeLocalDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		1FED6296283D233600D68BE5 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				1FED6297283D236700D68BE5 /* HomeRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		1FED62AA283D387300D68BE5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62C4283D3B5D00D68BE5 /* HomeCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1FED62B1283D397600D68BE5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62AF283D397400D68BE5 /* UIView+Anchors.swift */,
+				1FED62E2283FA97100D68BE5 /* UIFont+Extensions.swift */,
+				1FED62E4283FAB0C00D68BE5 /* UIImage+Extensions.swift */,
+				1FED62E6283FB13D00D68BE5 /* UIColor+Extensions.swift */,
+				1FED62E8283FCEB500D68BE5 /* UIView+Corner.swift */,
+				1FED62EA283FCEEB00D68BE5 /* UIView+Fade.swift */,
+				1F26469128435B4000FD9E65 /* String+Extensios.swift */,
+				1F26463D2842695300FD9E65 /* Bundle+decode.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1FED62B2283D39D000D68BE5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62B6283D3A1200D68BE5 /* Anton */,
+				1FED62B9283D3A1200D68BE5 /* Barlow_Condensed */,
+				1FED62B3283D3A0600D68BE5 /* Bangers */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		1FED62B3283D3A0600D68BE5 /* Bangers */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62B4283D3A0600D68BE5 /* Bangers-Regular.ttf */,
+			);
+			path = Bangers;
+			sourceTree = "<group>";
+		};
+		1FED62B6283D3A1200D68BE5 /* Anton */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62B7283D3A1200D68BE5 /* Anton-Regular.ttf */,
+				1FED62B8283D3A1200D68BE5 /* OFL.txt */,
+			);
+			path = Anton;
+			sourceTree = "<group>";
+		};
+		1FED62B9283D3A1200D68BE5 /* Barlow_Condensed */ = {
+			isa = PBXGroup;
+			children = (
+				1FED62BA283D3A1200D68BE5 /* BarlowCondensed-Light.ttf */,
+				1FED62BB283D3A1200D68BE5 /* BarlowCondensed-Medium.ttf */,
+				1FED62BC283D3A1200D68BE5 /* BarlowCondensed-Black.ttf */,
+				1FED62BD283D3A1200D68BE5 /* BarlowCondensed-Regular.ttf */,
+			);
+			path = Barlow_Condensed;
+			sourceTree = "<group>";
+		};
+		1FED62D3283D636C00D68BE5 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				1F26468B2843538200FD9E65 /* loader.json */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F7E85282840ECF800413719 /* Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7E852F2840ECF800413719 /* Build configuration list for PBXNativeTarget "Tests" */;
+			buildPhases = (
+				1F7E85252840ECF800413719 /* Sources */,
+				1F7E85262840ECF800413719 /* Frameworks */,
+				1F7E85272840ECF800413719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F7E852E2840ECF800413719 /* PBXTargetDependency */,
+				1F7E857728414C5900413719 /* PBXTargetDependency */,
+			);
+			name = Tests;
+			productName = Tests;
+			productReference = 1F7E85292840ECF800413719 /* Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1F7E853628414C4800413719 /* Vivora PRE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F7E856F28414C4800413719 /* Build configuration list for PBXNativeTarget "Vivora PRE" */;
+			buildPhases = (
+				1F7E854028414C4800413719 /* Sources */,
+				1F7E855D28414C4800413719 /* Frameworks */,
+				1F7E856328414C4800413719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Vivora PRE";
+			packageProductDependencies = (
+				1F7E853728414C4800413719 /* Lottie */,
+				1F7E853928414C4800413719 /* CryptoSwift */,
+				1F7E853B28414C4800413719 /* CocoaLumberjack */,
+				1F7E853D28414C4800413719 /* CocoaLumberjackSwift */,
+				1F7E853E28414C4800413719 /* SDWebImage */,
+			);
+			productName = Vivora;
+			productReference = 1F7E857428414C4800413719 /* Vivora PRE.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FED6238283CFC1B00D68BE5 /* Vivora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FED6266283CFC1D00D68BE5 /* Build configuration list for PBXNativeTarget "Vivora" */;
+			buildPhases = (
+				1FED6235283CFC1B00D68BE5 /* Sources */,
+				1FED6236283CFC1B00D68BE5 /* Frameworks */,
+				1FED6237283CFC1B00D68BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vivora;
+			packageProductDependencies = (
+				1FED62A3283D329F00D68BE5 /* Lottie */,
+				1FED62A6283D333200D68BE5 /* CryptoSwift */,
+				1FED62CF283D42C800D68BE5 /* CocoaLumberjack */,
+				1FED62D1283D42C800D68BE5 /* CocoaLumberjackSwift */,
+				1FED62E0283ECF3F00D68BE5 /* SDWebImage */,
+			);
+			productName = Vivora;
+			productReference = 1FED6239283CFC1B00D68BE5 /* Vivora.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FED6231283CFC1B00D68BE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					1F7E85282840ECF800413719 = {
+						CreatedOnToolsVersion = 13.4;
+						TestTargetID = 1F7E853628414C4800413719;
+					};
+					1FED6238283CFC1B00D68BE5 = {
+						CreatedOnToolsVersion = 13.4;
+					};
+				};
+			};
+			buildConfigurationList = 1FED6234283CFC1B00D68BE5 /* Build configuration list for PBXProject "Vivora" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FED6230283CFC1B00D68BE5;
+			packageReferences = (
+				1FED62A2283D329F00D68BE5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				1FED62A5283D333200D68BE5 /* XCRemoteSwiftPackageReference "CryptoSwift" */,
+				1FED62CE283D42C800D68BE5 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */,
+				1FED62DF283ECF3F00D68BE5 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
+			productRefGroup = 1FED623A283CFC1B00D68BE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FED6238283CFC1B00D68BE5 /* Vivora */,
+				1F7E85282840ECF800413719 /* Tests */,
+				1F7E853628414C4800413719 /* Vivora PRE */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F7E85272840ECF800413719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F26463C28424E2900FD9E65 /* listDTO.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7E856328414C4800413719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7E856428414C4800413719 /* OFL.txt in Resources */,
+				1F7E856528414C4800413719 /* Bangers-Regular.ttf in Resources */,
+				1F7E856628414C4800413719 /* BarlowCondensed-Regular.ttf in Resources */,
+				1F7E856728414C4800413719 /* BarlowCondensed-Light.ttf in Resources */,
+				1F26465C2842977500FD9E65 /* DetailCell.xib in Resources */,
+				1F7E856828414C4800413719 /* BarlowCondensed-Black.ttf in Resources */,
+				1F7E856928414C4800413719 /* Anton-Regular.ttf in Resources */,
+				1F264628284214A700FD9E65 /* VivoraToast.xib in Resources */,
+				1F26464C2842875D00FD9E65 /* DetailView.xib in Resources */,
+				1F7E856A28414C4800413719 /* Assets.xcassets in Resources */,
+				1F26468D2843538200FD9E65 /* loader.json in Resources */,
+				1F7E856B28414C4800413719 /* BarlowCondensed-Medium.ttf in Resources */,
+				1F7E856D28414C4800413719 /* LaunchScreen.storyboard in Resources */,
+				1F7E856E28414C4800413719 /* HomeView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FED6237283CFC1B00D68BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FED62BF283D3A1200D68BE5 /* OFL.txt in Resources */,
+				1FED62B5283D3A0600D68BE5 /* Bangers-Regular.ttf in Resources */,
+				1FED62C3283D3A1200D68BE5 /* BarlowCondensed-Regular.ttf in Resources */,
+				1FED62C0283D3A1200D68BE5 /* BarlowCondensed-Light.ttf in Resources */,
+				1F26465B2842977500FD9E65 /* DetailCell.xib in Resources */,
+				1FED62C2283D3A1200D68BE5 /* BarlowCondensed-Black.ttf in Resources */,
+				1FED62BE283D3A1200D68BE5 /* Anton-Regular.ttf in Resources */,
+				1F264627284214A700FD9E65 /* VivoraToast.xib in Resources */,
+				1F26464B2842875D00FD9E65 /* DetailView.xib in Resources */,
+				1FED6249283CFC1D00D68BE5 /* Assets.xcassets in Resources */,
+				1F26468C2843538200FD9E65 /* loader.json in Resources */,
+				1FED62C1283D3A1200D68BE5 /* BarlowCondensed-Medium.ttf in Resources */,
+				1FED62D7283D653800D68BE5 /* LaunchScreen.storyboard in Resources */,
+				1FED6282283CFCB800D68BE5 /* HomeView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F7E85252840ECF800413719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F2646312842313800FD9E65 /* MockURLSession.swift in Sources */,
+				1F26461F2841FED900FD9E65 /* XCTestCase+Extensions.swift in Sources */,
+				1F26468928433A1B00FD9E65 /* HomeRepositoryTests.swift in Sources */,
+				1F26468828433A1B00FD9E65 /* HomeRemoteDataSourceTests.swift in Sources */,
+				1F26461D2841FD8500FD9E65 /* TestHelper.swift in Sources */,
+				1F26468728433A1B00FD9E65 /* HomeInteractorTests.swift in Sources */,
+				1F26468628433A1B00FD9E65 /* HomePresenterTests.swift in Sources */,
+				1F26468528433A1B00FD9E65 /* HomeViewTests.swift in Sources */,
+				1F7E85352840ED0500413719 /* TestingAppDelegate.swift in Sources */,
+				1F264634284237F100FD9E65 /* ApiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F7E854028414C4800413719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F7E854128414C4800413719 /* HomeLocalDataSource.swift in Sources */,
+				1F2646732843315700FD9E65 /* DetailDomainProtocols.swift in Sources */,
+				1F7E854228414C4800413719 /* VivoraSearchController.swift in Sources */,
+				1F7E854328414C4800413719 /* HomePresentationProtocols.swift in Sources */,
+				1F7E854428414C4800413719 /* HomeRouter.swift in Sources */,
+				1F26469328435B4000FD9E65 /* String+Extensios.swift in Sources */,
+				1F26461A28418E2F00FD9E65 /* AutoMockable.generated.swift in Sources */,
+				1F26466528432F7400FD9E65 /* BaseProtocols.swift in Sources */,
+				1F7E854528414C4800413719 /* UIView+Corner.swift in Sources */,
+				1F7E854628414C4800413719 /* AppDelegate.swift in Sources */,
+				1F7E854728414C4800413719 /* HomeView.swift in Sources */,
+				1F26466228432EB400FD9E65 /* DetailPresentationProtocols.swift in Sources */,
+				1F2646532842947A00FD9E65 /* DetailColectionViewController.swift in Sources */,
+				1F7E854828414C4800413719 /* HomeCell.swift in Sources */,
+				1F7E854928414C4800413719 /* Vivora.xcdatamodeld in Sources */,
+				1F26462B2842176C00FD9E65 /* BaseVivoraViewController.swift in Sources */,
+				1F7E854A28414C4800413719 /* HomeInteractor.swift in Sources */,
+				1F7E854B28414C4800413719 /* HomeDataProtocols.swift in Sources */,
+				1F26463F2842695300FD9E65 /* Bundle+decode.swift in Sources */,
+				1F7E854C28414C4800413719 /* HomePresenter.swift in Sources */,
+				1F7E854D28414C4800413719 /* HomeDomainProtocols.swift in Sources */,
+				1F7E854E28414C4800413719 /* UIView+Fade.swift in Sources */,
+				1F264681284335C300FD9E65 /* DetailLocalDataSource.swift in Sources */,
+				1F2646962843603800FD9E65 /* ComicDTO.swift in Sources */,
+				1F7E854F28414C4800413719 /* CharactersListDTO.swift in Sources */,
+				1F264678284332F100FD9E65 /* DetailDataProtocols.swift in Sources */,
+				1F26466B284330AF00FD9E65 /* DetailPresenter.swift in Sources */,
+				1F26467E2843359400FD9E65 /* DetailRepository.swift in Sources */,
+				1F26464F2842887F00FD9E65 /* DetailHeader.swift in Sources */,
+				1F7E855028414C4800413719 /* UIFont+Extensions.swift in Sources */,
+				1F264684284335CE00FD9E65 /* DetailRemoteDataSource.swift in Sources */,
+				1F26464A2842875D00FD9E65 /* DetailView.swift in Sources */,
+				1F26465A2842977500FD9E65 /* DetailCell.swift in Sources */,
+				1F26469D2843756400FD9E65 /* StoryDTO.swift in Sources */,
+				1F2646682843304A00FD9E65 /* DetailRouter.swift in Sources */,
+				1F26469A2843622F00FD9E65 /* CollectionDisplayDataModel.swift in Sources */,
+				1F7E855128414C4800413719 /* Helper.swift in Sources */,
+				1F2646222842111F00FD9E65 /* VivoraToast.swift in Sources */,
+				1F7E855228414C4800413719 /* CellTitle.swift in Sources */,
+				1F7E855328414C4800413719 /* HomeRemoteDataSource.swift in Sources */,
+				1F7E855428414C4800413719 /* UIImage+Extensions.swift in Sources */,
+				1F7E855528414C4800413719 /* Character.swift in Sources */,
+				1F7E855628414C4800413719 /* Log.swift in Sources */,
+				1F7E855728414C4800413719 /* UIColor+Extensions.swift in Sources */,
+				1F7E855828414C4800413719 /* Network.swift in Sources */,
+				1F7E855928414C4800413719 /* Environment.swift in Sources */,
+				1F7E855A28414C4800413719 /* HomeRepository.swift in Sources */,
+				1F7E855B28414C4800413719 /* main.swift in Sources */,
+				1F2646702843314400FD9E65 /* DetailInteractor.swift in Sources */,
+				1F264626284214A700FD9E65 /* VivoraToastManager.swift in Sources */,
+				1F2646A02843756A00FD9E65 /* EventDTO.swift in Sources */,
+				1F7E855C28414C4800413719 /* UIView+Anchors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FED6235283CFC1B00D68BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F264680284335C300FD9E65 /* DetailLocalDataSource.swift in Sources */,
+				1F264625284214A700FD9E65 /* VivoraToastManager.swift in Sources */,
+				1FED62DB283EB18D00D68BE5 /* HomeLocalDataSource.swift in Sources */,
+				1F26469F2843756A00FD9E65 /* EventDTO.swift in Sources */,
+				1F2646592842977500FD9E65 /* DetailCell.swift in Sources */,
+				1F2646722843315700FD9E65 /* DetailDomainProtocols.swift in Sources */,
+				1F26466A284330AF00FD9E65 /* DetailPresenter.swift in Sources */,
+				1F2646672843304A00FD9E65 /* DetailRouter.swift in Sources */,
+				1F26466128432EB400FD9E65 /* DetailPresentationProtocols.swift in Sources */,
+				1F7E85202840D54A00413719 /* VivoraSearchController.swift in Sources */,
+				1F26464E2842887F00FD9E65 /* DetailHeader.swift in Sources */,
+				1F26469228435B4000FD9E65 /* String+Extensios.swift in Sources */,
+				1F2646952843603800FD9E65 /* ComicDTO.swift in Sources */,
+				1FED6280283CFCB800D68BE5 /* HomePresentationProtocols.swift in Sources */,
+				1FED6283283CFCB800D68BE5 /* HomeRouter.swift in Sources */,
+				1FED62E9283FCEB500D68BE5 /* UIView+Corner.swift in Sources */,
+				1FED623D283CFC1B00D68BE5 /* AppDelegate.swift in Sources */,
+				1F2646992843622F00FD9E65 /* CollectionDisplayDataModel.swift in Sources */,
+				1FED6281283CFCB800D68BE5 /* HomeView.swift in Sources */,
+				1FED62C5283D3B5D00D68BE5 /* HomeCell.swift in Sources */,
+				1FED6247283CFC1B00D68BE5 /* Vivora.xcdatamodeld in Sources */,
+				1F26466F2843314400FD9E65 /* DetailInteractor.swift in Sources */,
+				1FED6285283CFCB800D68BE5 /* HomeInteractor.swift in Sources */,
+				1FED6292283D22EE00D68BE5 /* HomeDataProtocols.swift in Sources */,
+				1FED627F283CFCB800D68BE5 /* HomePresenter.swift in Sources */,
+				1F26466428432F7400FD9E65 /* BaseProtocols.swift in Sources */,
+				1FED6284283CFCB800D68BE5 /* HomeDomainProtocols.swift in Sources */,
+				1FED62EB283FCEEB00D68BE5 /* UIView+Fade.swift in Sources */,
+				1FED629A283D2ED500D68BE5 /* CharactersListDTO.swift in Sources */,
+				1F2646492842875D00FD9E65 /* DetailView.swift in Sources */,
+				1F2646522842947A00FD9E65 /* DetailColectionViewController.swift in Sources */,
+				1FED62E3283FA97100D68BE5 /* UIFont+Extensions.swift in Sources */,
+				1FED62A9283D361600D68BE5 /* Helper.swift in Sources */,
+				1FED62C7283D3C8F00D68BE5 /* CellTitle.swift in Sources */,
+				1FED62D9283EB17500D68BE5 /* HomeRemoteDataSource.swift in Sources */,
+				1FED62E5283FAB0C00D68BE5 /* UIImage+Extensions.swift in Sources */,
+				1F264677284332F100FD9E65 /* DetailDataProtocols.swift in Sources */,
+				1FED62C9283D3F5B00D68BE5 /* Character.swift in Sources */,
+				1FED62CD283D426E00D68BE5 /* Log.swift in Sources */,
+				1F26463E2842695300FD9E65 /* Bundle+decode.swift in Sources */,
+				1FED62E7283FB13D00D68BE5 /* UIColor+Extensions.swift in Sources */,
+				1F2646212842111A00FD9E65 /* VivoraToast.swift in Sources */,
+				1FED62CB283D41D500D68BE5 /* Network.swift in Sources */,
+				1FED628F283D091500D68BE5 /* Environment.swift in Sources */,
+				1FED6298283D236700D68BE5 /* HomeRepository.swift in Sources */,
+				1F26467D2843359400FD9E65 /* DetailRepository.swift in Sources */,
+				1F7E85242840E80800413719 /* main.swift in Sources */,
+				1F264683284335CE00FD9E65 /* DetailRemoteDataSource.swift in Sources */,
+				1F26469C2843756400FD9E65 /* StoryDTO.swift in Sources */,
+				1F26462A2842176C00FD9E65 /* BaseVivoraViewController.swift in Sources */,
+				1FED62B0283D397400D68BE5 /* UIView+Anchors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F7E852E2840ECF800413719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FED6238283CFC1B00D68BE5 /* Vivora */;
+			targetProxy = 1F7E852D2840ECF800413719 /* PBXContainerItemProxy */;
+		};
+		1F7E857728414C5900413719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F7E853628414C4800413719 /* Vivora PRE */;
+			targetProxy = 1F7E857628414C5900413719 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F7E85302840ECF800413719 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andonidasilva.Vivora-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vivora PRE.app/Vivora PRE";
+			};
+			name = "Debug Production";
+		};
+		1F7E85312840ECF800413719 /* Debug Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andonidasilva.Vivora-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vivora PRE.app/Vivora PRE";
+			};
+			name = "Debug Development";
+		};
+		1F7E85322840ECF800413719 /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andonidasilva.Vivora-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vivora PRE.app/Vivora PRE";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Development";
+		};
+		1F7E85332840ECF800413719 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andonidasilva.Vivora-Test";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vivora PRE.app/Vivora PRE";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Production";
+		};
+		1F7E857028414C4800413719 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vivora PRE";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug Production";
+		};
+		1F7E857128414C4800413719 /* Debug Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vivora PRE";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug Development";
+		};
+		1F7E857228414C4800413719 /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vivora PRE";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release Development";
+		};
+		1F7E857328414C4800413719 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Vivora PRE";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release Production";
+		};
+		1FED6264283CFC1D00D68BE5 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Production";
+		};
+		1FED6265283CFC1D00D68BE5 /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Development";
+		};
+		1FED6267283CFC1D00D68BE5 /* Debug Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora;
+				PRODUCT_NAME = Vivora;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug Production";
+		};
+		1FED6268283CFC1D00D68BE5 /* Release Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora;
+				PRODUCT_NAME = Vivora;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release Development";
+		};
+		1FED6286283D005D00D68BE5 /* Debug Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug Development";
+		};
+		1FED6287283D005D00D68BE5 /* Debug Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora;
+				PRODUCT_NAME = Vivora;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Debug Development";
+		};
+		1FED628A283D008E00D68BE5 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release Production";
+		};
+		1FED628B283D008E00D68BE5 /* Release Production */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = G68Z757FQS;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Vivora/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.andonidasilva.Vivora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = "Release Production";
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F7E852F2840ECF800413719 /* Build configuration list for PBXNativeTarget "Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7E85302840ECF800413719 /* Debug Production */,
+				1F7E85312840ECF800413719 /* Debug Development */,
+				1F7E85322840ECF800413719 /* Release Development */,
+				1F7E85332840ECF800413719 /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug Development";
+		};
+		1F7E856F28414C4800413719 /* Build configuration list for PBXNativeTarget "Vivora PRE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F7E857028414C4800413719 /* Debug Production */,
+				1F7E857128414C4800413719 /* Debug Development */,
+				1F7E857228414C4800413719 /* Release Development */,
+				1F7E857328414C4800413719 /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug Development";
+		};
+		1FED6234283CFC1B00D68BE5 /* Build configuration list for PBXProject "Vivora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FED6264283CFC1D00D68BE5 /* Debug Production */,
+				1FED6286283D005D00D68BE5 /* Debug Development */,
+				1FED6265283CFC1D00D68BE5 /* Release Development */,
+				1FED628A283D008E00D68BE5 /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug Development";
+		};
+		1FED6266283CFC1D00D68BE5 /* Build configuration list for PBXNativeTarget "Vivora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FED6267283CFC1D00D68BE5 /* Debug Production */,
+				1FED6287283D005D00D68BE5 /* Debug Development */,
+				1FED6268283CFC1D00D68BE5 /* Release Development */,
+				1FED628B283D008E00D68BE5 /* Release Production */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = "Debug Development";
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1F7E853828414C4800413719 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		1F7E853A28414C4800413719 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		1F7E853C28414C4800413719 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		1F7E853F28414C4800413719 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		1FED62A2283D329F00D68BE5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		1FED62A5283D333200D68BE5 /* XCRemoteSwiftPackageReference "CryptoSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/CryptoSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		1FED62CE283D42C800D68BE5 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/CocoaLumberjack/CocoaLumberjack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		1FED62DF283ECF3F00D68BE5 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1F7E853728414C4800413719 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7E853828414C4800413719 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		1F7E853928414C4800413719 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7E853A28414C4800413719 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		1F7E853B28414C4800413719 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7E853C28414C4800413719 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		1F7E853D28414C4800413719 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7E853C28414C4800413719 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		1F7E853E28414C4800413719 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F7E853F28414C4800413719 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		1FED62A3283D329F00D68BE5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FED62A2283D329F00D68BE5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		1FED62A6283D333200D68BE5 /* CryptoSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FED62A5283D333200D68BE5 /* XCRemoteSwiftPackageReference "CryptoSwift" */;
+			productName = CryptoSwift;
+		};
+		1FED62CF283D42C800D68BE5 /* CocoaLumberjack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FED62CE283D42C800D68BE5 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjack;
+		};
+		1FED62D1283D42C800D68BE5 /* CocoaLumberjackSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FED62CE283D42C800D68BE5 /* XCRemoteSwiftPackageReference "CocoaLumberjack" */;
+			productName = CocoaLumberjackSwift;
+		};
+		1FED62E0283ECF3F00D68BE5 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FED62DF283ECF3F00D68BE5 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		1FED6245283CFC1B00D68BE5 /* Vivora.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1FED6246283CFC1B00D68BE5 /* Vivora.xcdatamodel */,
+			);
+			currentVersion = 1FED6246283CFC1B00D68BE5 /* Vivora.xcdatamodel */;
+			path = Vivora.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 1FED6231283CFC1B00D68BE5 /* Project object */;
+}

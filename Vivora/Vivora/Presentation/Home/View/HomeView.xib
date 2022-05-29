@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Anton-Regular.ttf">
+            <string>Anton-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="Vivora" customModuleProvider="target">
+            <connections>
+                <outlet property="animationView" destination="n2Q-yn-CUH" id="Soq-g6-13V"/>
+                <outlet property="noResultsLabel" destination="UIV-Q9-7q9" id="F6R-5F-xDs"/>
+                <outlet property="scrollUpButton" destination="v0Y-oI-d1U" id="uAy-3n-53m"/>
+                <outlet property="searchButton" destination="dfO-hi-BKw" id="lYl-NG-oq0"/>
+                <outlet property="selector" destination="LYA-gm-X8t" id="key-pW-QWd"/>
+                <outlet property="tableView" destination="hYb-pS-NMi" id="0eN-0j-Rk0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EU3-Ca-VZL" userLabel="Container">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n2Q-yn-CUH" customClass="AnimationView" customModule="Lottie">
+                            <rect key="frame" x="87" y="271.5" width="240" height="209"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="209" id="nLs-IH-OdD"/>
+                                <constraint firstAttribute="width" constant="240" id="tfl-xF-oQ5"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loader"/>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press return to search on the internet or below button" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIV-Q9-7q9">
+                            <rect key="frame" x="15" y="200" width="384" height="65"/>
+                            <fontDescription key="fontDescription" name="Anton-Regular" family="Anton" pointSize="22"/>
+                            <color key="textColor" name="AccentColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hYb-pS-NMi">
+                            <rect key="frame" x="0.0" y="36" width="414" height="816"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </tableView>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LYA-gm-X8t">
+                            <rect key="frame" x="15" y="5" width="384" height="32"/>
+                            <color key="backgroundColor" name="Main"/>
+                            <segments>
+                                <segment title="All"/>
+                                <segment title="Favourites" enabled="NO"/>
+                            </segments>
+                            <color key="tintColor" name="InfoToastGreen"/>
+                            <color key="selectedSegmentTintColor" name="AccentColor"/>
+                            <connections>
+                                <action selector="onPageSelected:" destination="-1" eventType="valueChanged" id="gfk-Rd-NgD"/>
+                            </connections>
+                        </segmentedControl>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfO-hi-BKw">
+                            <rect key="frame" x="162" y="295" width="90.5" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system" title="Search">
+                                <color key="baseForegroundColor" name="FontColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="onSearch:" destination="-1" eventType="touchUpInside" id="65i-Ph-QGF"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0Y-oI-d1U">
+                            <rect key="frame" x="299" y="685" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="RLb-GJ-RKi"/>
+                                <constraint firstAttribute="height" constant="80" id="d0V-Zx-NS8"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="filled" image="arrow.up" catalog="system">
+                                <color key="baseForegroundColor" name="FontColor"/>
+                            </buttonConfiguration>
+                            <connections>
+                                <action selector="onScrollUp:" destination="-1" eventType="touchUpInside" id="pwU-iF-K9t"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="Main"/>
+                    <constraints>
+                        <constraint firstItem="n2Q-yn-CUH" firstAttribute="centerY" secondItem="EU3-Ca-VZL" secondAttribute="centerY" constant="-50" id="4rn-W2-RK9"/>
+                        <constraint firstAttribute="bottom" secondItem="v0Y-oI-d1U" secondAttribute="bottom" constant="87" id="5aY-L5-75L"/>
+                        <constraint firstItem="UIV-Q9-7q9" firstAttribute="top" secondItem="EU3-Ca-VZL" secondAttribute="top" constant="200" id="AfM-HO-Z9I"/>
+                        <constraint firstAttribute="trailing" secondItem="LYA-gm-X8t" secondAttribute="trailing" constant="15" id="BtU-6c-AR1"/>
+                        <constraint firstItem="n2Q-yn-CUH" firstAttribute="centerX" secondItem="EU3-Ca-VZL" secondAttribute="centerX" id="CSg-Xb-Iwv"/>
+                        <constraint firstAttribute="trailing" secondItem="UIV-Q9-7q9" secondAttribute="trailing" constant="15" id="PPc-wg-2za"/>
+                        <constraint firstItem="dfO-hi-BKw" firstAttribute="top" secondItem="UIV-Q9-7q9" secondAttribute="bottom" constant="30" id="Qg4-aF-dEq"/>
+                        <constraint firstItem="LYA-gm-X8t" firstAttribute="leading" secondItem="EU3-Ca-VZL" secondAttribute="leading" constant="15" id="Uax-7h-cWR"/>
+                        <constraint firstAttribute="bottom" secondItem="hYb-pS-NMi" secondAttribute="bottom" id="VkS-Fa-25i"/>
+                        <constraint firstItem="UIV-Q9-7q9" firstAttribute="leading" secondItem="EU3-Ca-VZL" secondAttribute="leading" constant="15" id="XsY-t3-rn7"/>
+                        <constraint firstItem="hYb-pS-NMi" firstAttribute="top" secondItem="LYA-gm-X8t" secondAttribute="bottom" id="YAT-Qg-DIq"/>
+                        <constraint firstItem="LYA-gm-X8t" firstAttribute="top" secondItem="EU3-Ca-VZL" secondAttribute="top" constant="5" id="bU0-HS-DP8"/>
+                        <constraint firstItem="UIV-Q9-7q9" firstAttribute="centerX" secondItem="EU3-Ca-VZL" secondAttribute="centerX" id="cRU-xg-Md3"/>
+                        <constraint firstAttribute="trailing" secondItem="v0Y-oI-d1U" secondAttribute="trailing" constant="35" id="jjg-fF-d31"/>
+                        <constraint firstItem="dfO-hi-BKw" firstAttribute="centerX" secondItem="EU3-Ca-VZL" secondAttribute="centerX" id="ju7-Ga-F4m"/>
+                        <constraint firstItem="hYb-pS-NMi" firstAttribute="leading" secondItem="EU3-Ca-VZL" secondAttribute="leading" id="sIo-KD-PXd"/>
+                        <constraint firstAttribute="trailing" secondItem="hYb-pS-NMi" secondAttribute="trailing" id="zNL-md-Obv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="Main"/>
+            <constraints>
+                <constraint firstItem="EU3-Ca-VZL" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aFm-Se-ztd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="EU3-Ca-VZL" secondAttribute="trailing" id="fn4-RQ-ApE"/>
+                <constraint firstAttribute="bottom" secondItem="EU3-Ca-VZL" secondAttribute="bottom" id="neg-XN-cVe"/>
+                <constraint firstItem="EU3-Ca-VZL" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="wzR-sz-xUQ"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <namedColor name="AccentColor">
+            <color red="1" green="0.98299998044967651" blue="0.6380000114440918" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="FontColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="InfoToastGreen">
+            <color red="0.64800000190734863" green="1" blue="0.62300002574920654" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Main">
+            <color red="0.88599997758865356" green="0.24300000071525574" blue="0.34099999070167542" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
