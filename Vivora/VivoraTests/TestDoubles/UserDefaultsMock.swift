@@ -7,7 +7,7 @@
 
 import Foundation
 
-@testable import Vivora
+@testable import Vivora_PRE
 
 final class USerDefaultsMock: UserDefaultsProtocol {
     var integers: [String: Int] = [:]

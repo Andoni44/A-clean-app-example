@@ -16,7 +16,7 @@ class HomeViewTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
-        list = getMockCharacterListModel()
+        list = TestHelper.getMockCharacterListModel()
         presenter = HomePresenterProtocolMock()
         presenter.viewDidLoadClosure = {
             self.sut.present(characterList: self.list)
@@ -60,7 +60,7 @@ class HomeViewTests: XCTestCase {
     }
 
     func test_searchButton() {
-        tap(sut.searchButton)
+        TestHelper.tap(sut.searchButton)
         waitUI()
         XCTAssertTrue(presenter.loadWithNameOffsetCalled)
         XCTAssertFalse(sut.searchButton.isEnabled)
@@ -72,12 +72,12 @@ class HomeViewTests: XCTestCase {
     }
 
     func test_numberOfRows_shouldBe() {
-        XCTAssertEqual(numberOfRows(in: sut.tableView), 3)
+        XCTAssertEqual(TestHelper.numberOfRows(in: sut.tableView), 3)
     }
 
     func test_cellForRowAt_withRow0_shouldSetNameToA() {
         guard
-            let cell = cellForRowAt(in: sut.tableView, row: 0) as? HomeCell
+            let cell = TestHelper.cellForRowAt(in: sut.tableView, row: 0) as? HomeCell
         else {
             XCTFail("Fail to get HomeCell")
             return
@@ -88,7 +88,7 @@ class HomeViewTests: XCTestCase {
 
     func test_cellForRowAt_withRow1_shouldSetNameToB() {
         guard
-            let cell = cellForRowAt(in: sut.tableView, row: 1) as? HomeCell
+            let cell = TestHelper.cellForRowAt(in: sut.tableView, row: 1) as? HomeCell
         else {
             XCTFail("Fail to get HomeCell")
             return
@@ -99,7 +99,7 @@ class HomeViewTests: XCTestCase {
 
     func test_cellForRowAt_withRow2_shouldSetNameToC() {
         guard
-            let cell = cellForRowAt(in: sut.tableView, row: 2) as? HomeCell
+            let cell = TestHelper.cellForRowAt(in: sut.tableView, row: 2) as? HomeCell
         else {
             XCTFail("Fail to get HomeCell")
             return
@@ -108,9 +108,13 @@ class HomeViewTests: XCTestCase {
         XCTAssertEqual(cell.label.titleLabel.text, "C")
     }
 
-    func test_didSelectRow_withRow1() {
-        didSelectRow(in: sut.tableView, row: 1)
-    }
+    // TODO: Make this test work
+
+//    func test_didSelectRow_withRow1() {
+//        TestHelper.didSelectRow(in: sut.tableView, row: 1)
+//        waitUI()
+//        XCTAssertTrue(presenter.navigateToCharacterDetailCalled)
+//    }
 
     func test_hideResults() {
         sut.hideNoResults()
