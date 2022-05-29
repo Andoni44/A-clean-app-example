@@ -8,9 +8,9 @@
 import Foundation
 
 struct HomeLocalDataSource: HomeLocalDataSourceProtocol {
-    let defaults: UserDefaults
+    let defaults: UserDefaultsProtocol
 
-    init(defaults: UserDefaults = UserDefaults.standard) {
+    init(defaults: UserDefaultsProtocol = UserDefaults.standard) {
         self.defaults = defaults
     }
 }
