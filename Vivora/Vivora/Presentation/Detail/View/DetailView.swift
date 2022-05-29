@@ -12,23 +12,23 @@ final class DetailView: BaseVivoraViewController {
     
     // MARK: Outlets
     
-    @IBOutlet weak var descriptionTitle: UILabel!
-    @IBOutlet weak var descriptionBody: UILabel!
-    @IBOutlet weak var descriptionStack: UIStackView!
-    @IBOutlet weak var comicsContainer: UIView!
-    @IBOutlet weak var headerView: UIView!
-    @IBOutlet weak var storiesContainer: UIView!
-    @IBOutlet weak var eventsContainer: UIView!
-    @IBOutlet weak var storiesCollectionViewContainer: UIView!
-    @IBOutlet weak var storiesLabel: UILabel!
-    @IBOutlet weak var comicsCollectionContainer: UIView!
-    @IBOutlet weak var comicsLabel: UILabel!
-    @IBOutlet weak var eventsLabel: UILabel!
-    @IBOutlet weak var eventsCollectionContainer: UIView!
-    @IBOutlet weak var animationView: AnimationView!
-    @IBOutlet weak var comicsAI: UIActivityIndicatorView!
-    @IBOutlet weak var storiesAI: UIActivityIndicatorView!
-    @IBOutlet weak var eventsAI: UIActivityIndicatorView!
+    @IBOutlet private(set) weak var descriptionTitle: UILabel!
+    @IBOutlet private(set) weak var descriptionBody: UILabel!
+    @IBOutlet private(set) weak var descriptionStack: UIStackView!
+    @IBOutlet private(set) weak var comicsContainer: UIView!
+    @IBOutlet private(set) weak var headerView: UIView!
+    @IBOutlet private(set) weak var storiesContainer: UIView!
+    @IBOutlet private(set) weak var eventsContainer: UIView!
+    @IBOutlet private(set) weak var storiesCollectionViewContainer: UIView!
+    @IBOutlet private(set) weak var storiesLabel: UILabel!
+    @IBOutlet private(set) weak var comicsCollectionContainer: UIView!
+    @IBOutlet private(set) weak var comicsLabel: UILabel!
+    @IBOutlet private(set) weak var eventsLabel: UILabel!
+    @IBOutlet private(set) weak var eventsCollectionContainer: UIView!
+    @IBOutlet private(set) weak var animationView: AnimationView!
+    @IBOutlet private(set) weak var comicsAI: UIActivityIndicatorView!
+    @IBOutlet private(set) weak var storiesAI: UIActivityIndicatorView!
+    @IBOutlet private(set) weak var eventsAI: UIActivityIndicatorView!
     
     // MARK: Components
     
@@ -150,6 +150,7 @@ extension DetailView: DetailPresenterToViewProtocol {
     func startAnimation() {
         DispatchQueue.main.async { [comicsAI, eventsAI, storiesAI] in
             [comicsAI, eventsAI, storiesAI].forEach {
+                guard let ai = $0, !ai.isAnimating else { return }
                 $0?.startAnimating()
             }
         }
@@ -158,6 +159,7 @@ extension DetailView: DetailPresenterToViewProtocol {
     func stopAnimation() {
         DispatchQueue.main.async { [comicsAI, eventsAI, storiesAI] in
             [comicsAI, eventsAI, storiesAI].forEach {
+                guard $0?.isAnimating ?? true else { return }
                 $0?.stopAnimating()
             }
         }

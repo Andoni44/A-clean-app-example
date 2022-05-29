@@ -17,7 +17,7 @@ class HomePresenterTests: XCTestCase {
 
     override func setUp() {
         super.setUp()
-        list = getMockCharacterListModel()
+        list = TestHelper.getMockCharacterListModel()
         view = HomePresenterToViewProtocolMock()
         router = HomeRouterProtocolMock()
         interactor = HomeInteractorProtocolMock()
@@ -34,6 +34,12 @@ class HomePresenterTests: XCTestCase {
         view = nil
         sut = nil
         super.tearDown()
+    }
+
+    func test_navigateTo_detail() {
+        sut.navigateTo(characterDetail: TestHelper.getDetailCharacterModel())
+        XCTAssertTrue(router.navigateToDetailOfCharacterCalled)
+        XCTAssertTrue(router.navigateToDetailOfCharacterCallsCount == 1)
     }
 
     func test_dependencies_notNil() {
