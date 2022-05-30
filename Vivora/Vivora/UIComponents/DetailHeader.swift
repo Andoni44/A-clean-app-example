@@ -37,6 +37,12 @@ final class HeaderDetailView: UIView {
         return component
     }()
 
+    let imageContainer: UIView = {
+        let view = UIView()
+        view.backgroundColor = UIColor.tintColor
+        return view
+    }()
+
     init() {
         super.init(frame: CGRect())
         setupViews()
@@ -56,7 +62,8 @@ final class HeaderDetailView: UIView {
 private extension HeaderDetailView {
     func setupViews() {
         addSubview(header)
-        header.addSubview(imageView)
+        header.addSubview(imageContainer)
+        imageContainer.addSubview(imageView)
         header.addSubview(nameBackground)
         nameBackground.addSubview(nameLabel)
 
@@ -69,10 +76,16 @@ private extension HeaderDetailView {
                                      bottom: .zero, right: 10))
 
         // ImageView
-        imageView.anchor(topAnchor: header.topAnchor,
+        imageContainer.anchor(topAnchor: header.topAnchor,
                          trailingAnchor: header.trailingAnchor,
                          bottomAnchor: header.bottomAnchor,
                          leadingAnchor: header.leadingAnchor)
+
+        imageView.anchor(topAnchor: imageContainer.topAnchor,
+                              trailingAnchor: imageContainer.trailingAnchor,
+                              bottomAnchor: imageContainer.bottomAnchor,
+                         leadingAnchor: imageContainer.leadingAnchor,
+                         padding: .init(top: 15, left: 15, bottom: 15, right: 15))
 
         // NameLabel
         nameLabel.anchor(topAnchor: nameBackground.topAnchor,

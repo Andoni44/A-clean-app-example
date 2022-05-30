@@ -43,14 +43,14 @@
                                 <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="loader"/>
                             </userDefinedRuntimeAttributes>
                         </view>
-                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press return to search on the internet or below button" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIV-Q9-7q9">
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press return to search on the internet or below button" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIV-Q9-7q9">
                             <rect key="frame" x="15" y="200" width="384" height="65"/>
                             <fontDescription key="fontDescription" name="Anton-Regular" family="Anton" pointSize="22"/>
                             <color key="textColor" name="AccentColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hYb-pS-NMi">
-                            <rect key="frame" x="0.0" y="36" width="414" height="816"/>
+                            <rect key="frame" x="0.0" y="41" width="414" height="811"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </tableView>
                         <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bordered" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="LYA-gm-X8t">
@@ -103,7 +103,7 @@
                         <constraint firstItem="LYA-gm-X8t" firstAttribute="leading" secondItem="EU3-Ca-VZL" secondAttribute="leading" constant="15" id="Uax-7h-cWR"/>
                         <constraint firstAttribute="bottom" secondItem="hYb-pS-NMi" secondAttribute="bottom" id="VkS-Fa-25i"/>
                         <constraint firstItem="UIV-Q9-7q9" firstAttribute="leading" secondItem="EU3-Ca-VZL" secondAttribute="leading" constant="15" id="XsY-t3-rn7"/>
-                        <constraint firstItem="hYb-pS-NMi" firstAttribute="top" secondItem="LYA-gm-X8t" secondAttribute="bottom" id="YAT-Qg-DIq"/>
+                        <constraint firstItem="hYb-pS-NMi" firstAttribute="top" secondItem="LYA-gm-X8t" secondAttribute="bottom" constant="5" id="YAT-Qg-DIq"/>
                         <constraint firstItem="LYA-gm-X8t" firstAttribute="top" secondItem="EU3-Ca-VZL" secondAttribute="top" constant="5" id="bU0-HS-DP8"/>
                         <constraint firstItem="UIV-Q9-7q9" firstAttribute="centerX" secondItem="EU3-Ca-VZL" secondAttribute="centerX" id="cRU-xg-Md3"/>
                         <constraint firstAttribute="trailing" secondItem="v0Y-oI-d1U" secondAttribute="trailing" constant="35" id="jjg-fF-d31"/>

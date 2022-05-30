@@ -145,6 +145,7 @@ private extension HomeView {
     }
 
     func setupTableView() {
+        tableView.keyboardDismissMode = .onDrag
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(HomeCell.self, forCellReuseIdentifier: cellID)
