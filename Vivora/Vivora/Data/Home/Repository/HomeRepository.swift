@@ -43,7 +43,7 @@ private extension HomeRepository {
                 $0.resourceURI.extract(withRegex: "(/[0-9]+)").dropFirst().lowercased()
             }
             return Character(id: $0.id,
-                             image: $0.thumbnail.path.transformToHTTPS,
+                             image: $0.thumbnail.path.transformToHTTPS + ImageExtension.landscapeLarge.value,
                              name: $0.name,
                              description: $0.resultDescription,
                              comicsCollection: comics,

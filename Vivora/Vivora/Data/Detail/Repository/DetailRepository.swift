@@ -45,7 +45,7 @@ struct DetailRepository: DetailRepositoryProtocol {
             $0
         }
         .map {
-            $0.thumbnail.path.transformToHTTPS
+            $0.thumbnail.path.transformToHTTPS + ImageExtension.landscapeLarge.value
         }
 
         toRet["events"] = results.events.map {
@@ -55,7 +55,7 @@ struct DetailRepository: DetailRepositoryProtocol {
             $0
         }
         .map {
-            $0.thumbnail.path.transformToHTTPS
+            $0.thumbnail.path.transformToHTTPS + ImageExtension.landscapeLarge.value
         }
 
         toRet["stories"] = results.stories.map {
@@ -65,7 +65,8 @@ struct DetailRepository: DetailRepositoryProtocol {
             $0
         }
         .compactMap {
-            $0.thumbnail?.path.transformToHTTPS
+            guard let thumbnail = $0.thumbnail else { return nil }
+            return thumbnail.path.transformToHTTPS + ImageExtension.landscapeLarge.value
         }
         return toRet
     }

@@ -28,7 +28,31 @@ extension String {
     }
 
     var transformToHTTPS: String {
-        self.replacingOccurrences(of: "http", with: "https") + "/landscape_xlarge.jpg"
+        self.replacingOccurrences(of: "http", with: "https")
+    }
+
+    var localized: String {
+        NSLocalizedString(self, comment: "")
+    }
+}
+
+enum ImageExtension: String {
+    case landscapeLarge
+    case landscapeSmall
+    case squareLarge
+    case squareSmall
+
+    var value: String {
+        switch self {
+            case .landscapeLarge:
+                return "/landscape_xlarge.jpg"
+            case .landscapeSmall:
+                return "/portrait_small.jpg"
+            case .squareLarge:
+                return "/standard_xlarge.jpg"
+            case .squareSmall:
+                return "/standard_small.jpg"
+        }
     }
 
     var localized: String {

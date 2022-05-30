@@ -41,10 +41,10 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FAP-i7-aDM" userLabel="Container">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rFR-mh-yyo">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iab-eg-vAn" userLabel="Scroll Content Container">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="1336"/>
@@ -212,7 +212,7 @@
                             </constraints>
                         </scrollView>
                         <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qc7-Rg-3Hb" customClass="AnimationView" customModule="Lottie">
-                            <rect key="frame" x="87" y="343.5" width="240" height="209"/>
+                            <rect key="frame" x="87" y="321.5" width="240" height="209"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="209" id="Wpv-f1-ksm"/>
@@ -239,7 +239,7 @@
                 <constraint firstItem="Iab-eg-vAn" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="NFc-B6-9xu"/>
                 <constraint firstAttribute="bottom" secondItem="FAP-i7-aDM" secondAttribute="bottom" id="gCL-HE-j4B"/>
                 <constraint firstItem="rFR-mh-yyo" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ob7-q1-IR6"/>
-                <constraint firstItem="FAP-i7-aDM" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sdc-jo-Mlt"/>
+                <constraint firstItem="FAP-i7-aDM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="sdc-jo-Mlt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="FAP-i7-aDM" secondAttribute="trailing" id="uFE-p8-vv1"/>
             </constraints>
             <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
