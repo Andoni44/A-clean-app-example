@@ -50,6 +50,8 @@ We use here some interesting libraries:
 ## Next objectives
 
 - Implement favourites functionality
+- Create SDKs for UI and networking and extract those folders to GIT submodules 
+- Enhance user feedback when loading more content
 - UI testing independant from network
 - Migrate to Async/Await
 - Make collectionViews middle point cell to grow

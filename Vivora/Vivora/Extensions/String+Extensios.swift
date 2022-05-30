@@ -54,8 +54,4 @@ enum ImageExtension: String {
                 return "/standard_small.jpg"
         }
     }
-
-    var localized: String {
-        NSLocalizedString(self, comment: "")
-    }
 }
